@@ -1,12 +1,12 @@
 // USAGE
 // import (
-//	sr "go_simple_router"
+//	sr "github.com/nordorn/go_simple_router"
 //	"log"
 // 	"fmt"
 // )
 //
-// Embed BasicHandler to implement all stub methods of CustomHttpHandler interface
-// type Index struct{ *sr.BasicHandler }
+// Embed BasicHandlers to implement all stub methods of CustomHttpHandler interface
+// type Index struct{ *sr.BasicHandlers }
 //
 // func (*Index) Get(w http.ResponseWriter, r *http.Request) {
 //	fmt.Fprintln(w, "This is Index Get")
@@ -91,7 +91,7 @@ func (*BasicHandlers) Patch(w http.ResponseWriter, r *http.Request) {
 	log.Println("Patch Stub")
 }
 
-func (*BasicHandlers) Delete (w http.ResponseWriter, r *http.Request) {
+func (*BasicHandlers) Delete(w http.ResponseWriter, r *http.Request) {
 	log.Println("Delete Stub")
 }
 
