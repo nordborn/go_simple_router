@@ -22,7 +22,7 @@ import (
 	sr "github.com/nordorn/go_simple_router"
 )
 
-// Embed BasicHandler to implement stub methods
+// Embed BasicHandlers to implement stub methods
 type Index struct{ *sr.BasicHandlers }
 
 func (*Index) Get(w http.ResponseWriter, r *http.Request) {
