@@ -11,7 +11,9 @@ in http.HandleFunc
 
 No overhead and custom routing implementations
 
-## Example
+**Just use empty structs with such methods**
+
+### Example
 ```
 package main
 
